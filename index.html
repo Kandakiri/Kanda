@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mon site — Titre</title>
+  <meta name="description" content="Page d'accueil simple et responsive créée rapidement." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <a href="#">MonLogo</a>
+      </div>
+      <nav class="site-nav" id="nav" aria-label="Navigation principale">
+        <button id="nav-toggle" aria-expanded="false" aria-controls="nav-list">Menu</button>
+        <ul id="nav-list">
+          <li><a href="#hero">Accueil</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="hero" class="hero">
+      <div class="container hero-inner">
+        <h1>Bienvenue — Titre accrocheur</h1>
+        <p class="lead">Je crée des pages web rapides, propres et responsives. Besoin d’une version personnalisée ?</p>
+        <p>
+          <a class="btn" href="#contact">Contactez-moi</a>
+          <a class="btn btn-outline" href="#services">Voir les services</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <h2>Services</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Site vitrine</h3>
+            <p>Présentation professionnelle de ton activité.</p>
+          </article>
+          <article class="card">
+            <h3>E-commerce</h3>
+            <p>Boutique en ligne rapide et sécurisée.</p>
+          </article>
+          <article class="card">
+            <h3>Maintenance</h3>
+            <p>Mises à jour, sauvegardes et optimisation.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section alt">
+      <div class="container">
+        <h2>À propos</h2>
+        <p>Texte court pour te présenter : qui tu es, ce que tu fais, valeur ajoutée.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <form id="contact-form" novalidate>
+          <label for="name">Nom</label>
+          <input id="name" name="name" type="text" required />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit" class="btn">Envoyer (demo)</button>
+          <p class="note">Ce formulaire est en mode démonstration — il n’envoie pas d’email.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Ton entreprise — Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
