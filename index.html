@@ -1,97 +1,95 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Mon site — Titre</title>
-  <meta name="description" content="Page d'accueil simple et responsive créée rapidement." />
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kanda-LaFabrik | Nature & Création</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(to bottom, #2e4d2c, #3b3225);
+      color: #f4f4f4;
+      text-align: center;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.4);
+      padding: 60px 20px;
+      background-image: url('https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=1400&q=80');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+      color: #e0e0e0;
+    }
+
+    section {
+      padding: 60px 20px;
+      background: #f5f3ef;
+      color: #2f2f2f;
+    }
+
+    section h2 {
+      color: #3d5a40;
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    section p {
+      max-width: 700px;
+      margin: 0 auto;
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    footer {
+      background: #2e4d2c;
+      color: #fff;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+
+    footer a {
+      color: #a5e887;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-  <a class="skip-link" href="#main">Aller au contenu</a>
-
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand">
-        <a href="#">MonLogo</a>
-      </div>
-      <nav class="site-nav" id="nav" aria-label="Navigation principale">
-        <button id="nav-toggle" aria-expanded="false" aria-controls="nav-list">Menu</button>
-        <ul id="nav-list">
-          <li><a href="#hero">Accueil</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#about">À propos</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+  <header>
+    <h1>Kanda-LaFabrik</h1>
+    <p>L’harmonie entre la nature et le savoir-faire</p>
   </header>
 
-  <main id="main">
-    <section id="hero" class="hero">
-      <div class="container hero-inner">
-        <h1>Bienvenue — Titre accrocheur</h1>
-        <p class="lead">Je crée des pages web rapides, propres et responsives. Besoin d’une version personnalisée ?</p>
-        <p>
-          <a class="btn" href="#contact">Contactez-moi</a>
-          <a class="btn btn-outline" href="#services">Voir les services</a>
-        </p>
-      </div>
-    </section>
+  <section>
+    <h2>À propos</h2>
+    <p>
+      Bienvenue chez <strong>Kanda-LaFabrik</strong> 🌿 — un espace où la nature inspire la création.  
+      Nous croyons en un équilibre entre authenticité, durabilité et innovation.  
+      Chaque projet est façonné avec respect pour la Terre et passion du travail bien fait.
+    </p>
+  </section>
 
-    <section id="services" class="section">
-      <div class="container">
-        <h2>Services</h2>
-        <div class="grid">
-          <article class="card">
-            <h3>Site vitrine</h3>
-            <p>Présentation professionnelle de ton activité.</p>
-          </article>
-          <article class="card">
-            <h3>E-commerce</h3>
-            <p>Boutique en ligne rapide et sécurisée.</p>
-          </article>
-          <article class="card">
-            <h3>Maintenance</h3>
-            <p>Mises à jour, sauvegardes et optimisation.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="section alt">
-      <div class="container">
-        <h2>À propos</h2>
-        <p>Texte court pour te présenter : qui tu es, ce que tu fais, valeur ajoutée.</p>
-      </div>
-    </section>
-
-    <section id="contact" class="section">
-      <div class="container">
-        <h2>Contact</h2>
-        <form id="contact-form" novalidate>
-          <label for="name">Nom</label>
-          <input id="name" name="name" type="text" required />
-
-          <label for="email">Email</label>
-          <input id="email" name="email" type="email" required />
-
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
-
-          <button type="submit" class="btn">Envoyer (demo)</button>
-          <p class="note">Ce formulaire est en mode démonstration — il n’envoie pas d’email.</p>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year"></span> Ton entreprise — Tous droits réservés.</p>
-    </div>
+  <footer>
+    © 2025 Kanda-LaFabrik | Inspiré par la nature et façonné par la main humaine.  
+    <br><a href="mailto:contact@kanda-lafabrik.com">contact@kanda-lafabrik.com</a>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
